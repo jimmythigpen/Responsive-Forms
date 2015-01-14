@@ -14,8 +14,8 @@ html {
 body {
   background-color: #5ba3d6;
   font-family: "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif;
-  font-weight: 300;
-  font-size: 14px; }
+  font-size: 14px;
+  font-weight: 300; }
 
 .container {
   max-width: 800px;
@@ -44,23 +44,39 @@ body {
 
 select {
   background-color: #5ba3d6;
+  width: 100%;
   color: #fff; }
 
 label {
   display: block;
-  color: #fff;
-  margin-top: 10px; }
+  margin-top: 10px;
+  color: #fff; }
 
 input {
+  transition: border-color 200ms, box-shadow 200ms;
+  margin-top: 4px;
   border: 2px solid #fff;
-  width: 100%;
+  border-radius: 3px;
+  box-shadow: inset 0 0 2px #fff;
   background-color: #5ba3d6;
   padding: 4px;
-  margin-top: 4px;
-  transition: background-color 300ms;
+  width: 100%;
   color: #fff; }
+  input::-webkit-input-placeholder {
+    color: #2a6a98;
+    font-style: italic; }
+  input::-moz-placeholder {
+    color: #2a6a98;
+    font-style: italic; }
+  input:-moz-placeholder {
+    color: #2a6a98;
+    font-style: italic; }
+  input:-ms-input-placeholder {
+    color: #2a6a98;
+    font-style: italic; }
   input:focus {
-    border: 2px solid #2a6a98; }
+    border: 2px solid #2a6a98;
+    box-shadow: inset 0 0 2px #2a6a98; }
     input:focus::-webkit-input-placeholder {
       color: transparent; }
     input:focus::-moz-placeholder {
@@ -69,26 +85,19 @@ input {
       color: transparent; }
     input:focus:-ms-input-placeholder {
       color: transparent; }
-  input::-webkit-input-placeholder {
-    color: #2a6a98; }
-  input::-moz-placeholder {
-    color: #2a6a98; }
-  input:-moz-placeholder {
-    color: #2a6a98; }
-  input:-ms-input-placeholder {
-    color: #2a6a98; }
-
-select {
-  width: 100%; }
 
 textarea {
-  width: 100%;
+  transition: border-color 200ms, box-shadow 200ms;
+  margin-top: 4px;
   border: 2px solid #fff;
+  border-radius: 3px;
+  box-shadow: inset 0 0 2px #fff;
   background-color: #5ba3d6;
   padding: 4px;
-  margin-top: 4px;
+  width: 100%;
   color: #fff; }
   textarea:focus {
-    border: 2px solid #2a6a98; }
+    border: 2px solid #2a6a98;
+    box-shadow: inset 0 0 2px #2a6a98; }
 
 /*# sourceMappingURL=main.css.map */
