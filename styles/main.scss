@@ -1,0 +1,44 @@
+@import 'bourbon/bourbon';
+$visual-grid: true;
+// $gutter: em(50px);
+@import 'neat/neat';
+
+.container {
+  @include outer-container;
+
+}
+
+form {
+  @include span-columns(4);
+
+}
+
+input {
+  border: 1px dotted #999;
+  border-radius: 0;
+}
+
+
+select, input, textarea {
+  @include appearance(none);
+  border-radius: 0px;
+  border: none;
+  background-color: transparent;
+
+  &:focus {
+    outline:none;
+  }
+}
+
+label {
+  position: absolute;
+}
+
+input {
+  border-bottom: 2px solid grey;
+  transition: all 300ms;
+
+  &:focus {
+    border-bottom: 2px solid green;
+  }
+}
